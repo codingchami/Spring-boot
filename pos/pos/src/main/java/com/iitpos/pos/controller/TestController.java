@@ -12,12 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     //gives the end points for Mappings
-    @GetMapping(path ="get-text" )
+    //here, reason of the usage of *GetMapping* is its reads the data from database
+    //post-save data to the database
+    //put-update the database
+    //Delete-delete from the database
+    @GetMapping(path ="/get-text" )
     public String getMyText(){
         return "Hello World!..";
     }
-    @GetMapping("get-name")
+    @GetMapping("/get-name")
     public String getMyName(){
         return "Kamal";
     }
+    
 }
