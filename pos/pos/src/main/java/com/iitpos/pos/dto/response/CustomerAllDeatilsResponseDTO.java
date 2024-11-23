@@ -1,20 +1,19 @@
-package com.iitpos.pos.dto.request;
+package com.iitpos.pos.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
-
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
-public class CustomerSaveRequestDTO {
-    private int customerID;
+public class CustomerAllDeatilsResponseDTO {
+    private int customerId;
     private String customerName;
     private String customerAddress;
     private double salary;
-    private ArrayList contacts;
+    private ArrayList contscts;
     private String nic;
-    private boolean activeState;
+    private boolean activities;
 }
