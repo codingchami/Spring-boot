@@ -41,4 +41,14 @@ public class Item {
 
     @Column(name = "active_state",nullable = false)
     private boolean activeState;
+
+    public Item(String name, MeasuringType measuringType, double supplierPrice, double displayPrice, double sellingPrice, int qtyOnHand, boolean activeState) {
+        this.name = name;
+        this.measuringType = measuringType;
+        this.supplierPrice = supplierPrice;
+        this.displayPrice = displayPrice;
+        this.sellingPrice = sellingPrice;
+        this.qtyOnHand = qtyOnHand;
+        this.activeState = activeState;
+    }
 }
